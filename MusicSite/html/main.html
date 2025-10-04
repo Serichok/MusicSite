@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KHAGN</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+  <!-- Баннер -->
+  <header class="hero">
+    <nav class="navbar">
+      <h1 class="logo">KHAGN</h1>
+      <div class="auth-buttons">
+        <a href="/html/Login.html"><button class="btn-log-in"></i> Log in</button></a>
+        <a href="/html/Signup.html"><button class="btn"></i> Create account</button></a>
+      </div>
+    </nav>
+    <div class="hero-text">
+      <h2>LAUFEY</h2>
+      <p>A PLAYLIST</p>
+      <p>From bedrooms and broom closets to studios and stadiums,
+        SoundCloud is where you define what’s next in music. Just hit upload.</p>
+      <button class="upload-btn"></i> upload</button>
+    </div>
+  </header>
+  <!-- Поиск -->
+  <section class="search-section">
+    <div class="search-box">
+      <input type="text" placeholder="Search for artists, bands, tracks, podcasts">
+      <i class="fa-solid fa-magnifying-glass search-icon"></i>
+    </div>
+  </section>
+
+  <!-- Тренды -->
+  <h3 class="trending">Hear what’s trending for free in the SoundCloud community</h3>
+
+  <!-- Фичи -->
+  <section class="features">
+    <h2>Features that make our app awesome</h2>
+    <div class="features-grid">
+      <div class="feature">
+        <img src="/img/Cloud.jpg" alt="">
+        <h4>Cloud Based</h4>
+        <p>Store your music on your favorite cloud and listen to your music in your device.</p>
+      </div>
+      <div class="feature">
+        <img src="/img/Wifi.jpg" alt="">
+        <h4>Stream your music</h4>
+        <p>Listen your music through internet saving space in your device.</p>
+      </div>
+      <div class="feature">
+        <img src="/img/File.jpg" alt="">
+        <h4>Play music offline</h4>
+        <p>Download your music and play it without internet connection.</p>
+      </div>
+    </div>
+  </section>
+<section class="faq" id="faq">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq-item">
+    <button class="faq-question">What is KHAGN? <span>+</span></button>
+    <div class="faq-answer">
+      <p>KHAGN is a music platform where you can upload, share and stream tracks.</p>
+    </div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question">Can I listen offline? <span>+</span></button>
+    <div class="faq-answer">
+      <p>Yes, you can download your favorite tracks and enjoy them without internet connection.</p>
+    </div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question">Is KHAGN free? <span>+</span></button>
+    <div class="faq-answer">
+      <p>Basic features are free. Premium options are available for advanced users.</p>
+    </div>
+  </div>
+</section>
+
+  <footer>
+    <h3>KHAGN PLAYER</h3>
+    <p>
+      <a href="#">Privacy Policy</a><br>
+      <a href="#">Terms of Service</a>
+    </p>
+    <button id="feedbackBtn" class="btn-feedback">Feedback</button>
+  </footer>
+
+  <!-- Modal (hidden by default) -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Send us feedback</h2>
+      <form id="feedbackForm">
+        <input type="text" placeholder="Your name" required>
+        <input type="email" placeholder="Your email" required>
+        <textarea placeholder="Your message" required></textarea>
+        <button type="submit" class="btn-submit">Send</button>
+      </form>
+    </div>
+  </div>
+  <!-- Modal Window -->
+  <div id="profileModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Edit Profile</h2>
+      <form id="editProfileForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" value="KARTIHIKAI" required>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" value="Atyrau, KZ" required>
+
+        <button type="submit" class="save-btn">Save</button>
+      </form>
+    </div>
+  </div>
+  <script src="/js/main.js"></script>
+
+</body>
+
+</html>

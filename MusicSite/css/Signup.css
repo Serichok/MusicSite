@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* Universal box-sizing for predictable layout */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    background: #010101;
+    background: linear-gradient(0deg, #010101, #303030);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Use min-height to allow scrolling on small/landscape screens */
+    min-height: 100vh; 
+    padding: 20px 0; /* Adds some space on the top/bottom if scrolling is needed */
+}
+
+.signup-box {
+    background: #000;
+    padding: 40px 30px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Лого */
+.signup-box .logo {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+/* Заголовок */
+.signup-box h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+
+/* Поля ввода */
+.input-label {
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.input-box {
+    /* The width was 100%, which works, but let's ensure box-sizing is handled */
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid #555;
+    background: #111;
+    color: white;
+    outline: none;
+}
+
+/* Зелёная кнопка */
+.btn-continue {
+    width: 100%;
+    background: #1db954;
+    color: black;
+    font-weight: bold;
+    border: none;
+    padding: 14px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn-continue:hover {
+    background: #18a34a;
+}
+
+/* Разделитель */
+.divider {
+    margin: 15px 0;
+    color: #aaa;
+    /* The font-size was a bit large, let's make it more subtle */
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Соц. кнопки */
+.btn-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid #555;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 8px 0;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-social:hover {
+    background: #222;
+}
+
+.btn-social i {
+    font-size: 18px;
+}
+
+/* Подвал */
+.footer {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #aaa;
+    display: flex;
+    /* Reverted to the original for simplicity, as it works well */
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Адаптив (Your original media query is effective and has been kept) */
+@media (max-width: 500px) {
+    .signup-box {
+        width: 90%;
+        padding: 30px 20px;
+    }
+
+    .signup-box h1 {
+        /* Your font-size was good, adjusted slightly for better readability */
+        font-size: 1.5rem; 
+    }
+
+    .btn-continue,
+    .btn-social {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
