@@ -121,7 +121,7 @@ header nav a {
 }
 
 .library-nav a.active {
-    text-decoration: underline;    
+  text-decoration: underline;
 }
 
 .tracks-header {
@@ -164,7 +164,8 @@ header nav a {
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
-  position: relative; /* For play button positioning */
+  position: relative;
+  /* For play button positioning */
 }
 
 .track-item:hover {
@@ -368,15 +369,18 @@ header nav a {
   .main-content {
     padding: 15px 20px;
   }
+
   .tracks-grid {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 16px;
   }
+
   .tracks-header {
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;
   }
+
   .filter-input {
     width: 100%;
     box-sizing: border-box;
@@ -437,10 +441,94 @@ header nav a {
     display: none;
   }
 }
+
 .track-album-art {
-    width: 100%;
-    aspect-ratio: 1 / 1; /* Creates a 1:1 aspect ratio square */
-    object-fit: cover; /* Ensures the image covers the area without distortion */
-    background-color: #333; /* Fallback color while image loads */
-    margin-bottom: 12px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  /* Creates a 1:1 aspect ratio square */
+  object-fit: cover;
+  /* Ensures the image covers the area without distortion */
+  background-color: #333;
+  /* Fallback color while image loads */
+  margin-bottom: 12px;
+}
+
+.genre-select {
+  background: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 6px;
+  padding: 8px 12px;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.genre-select:hover {
+  background: #333;
+}
+
+.sort-btn,
+.load-more-btn {
+  margin-left: 10px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #333;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.sort-btn:hover,
+.load-more-btn:hover {
+  background: #444;
+}
+
+.load-more-btn {
+  display: block;
+  margin: 30px auto;
+  /* centers horizontally */
+  padding: 10px 25px;
+  font-size: 16px;
+  background-color: #1db954;
+  /* Spotify-style green */
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.load-more-btn:hover {
+  background-color: #17a44b;
+  transform: scale(1.05);
+}
+
+.profile {
+  position: relative;
+}
+
+.dropdown-menu {
+  top: 100%;
+  right: 0;
+}
+
+.like-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 18px;
+  color: #b3b3b3;
+  transition: color 0.2s;
+}
+
+.like-icon.fa-solid {
+  color: #1db954;
+}
+
+.track-item:hover .like-icon {
+  color: white;
 }

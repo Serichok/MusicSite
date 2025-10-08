@@ -1,0 +1,22 @@
+Working with Data
+·  Connect to an open API (e.g.,
+tracks or something you want).
+·      
+Create
+fake data in JSON and display it on the page (e.g. tracks).
+1.Add
+a search function (e.g., search tracks or song name).
+2. Implement
+filtering (e.g., show only tracks of a certain category or as you want).
+3.Implement
+sorting (e.g., sort tracks by alphabate or as you want).
+4. Create
+a "Load more" button or infinite scroll to display extra data.
+5.Add
+a favorites system (e.g., mark some items as favorites and show them in a
+separate section).
+6. Save
+user preferences in LocalStorage (e.g., theme, favorite items, form data).
+7. Create
+simple pagination (e.g., split a large list of data into pages).
+https://cors-anywhere.herokuapp.com/corsdemo
